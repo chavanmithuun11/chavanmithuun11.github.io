@@ -28,7 +28,7 @@
         .logo span { color: #38bdf8 !important; }
         .nav-links a { color: #9ca3af !important; text-decoration: none; margin-left: 24px; font-size: 14px; font-weight: 500; transition: color 0.3s; }
         .nav-links a:hover { color: #38bdf8 !important; }
-        .hero { max-width: 900px; margin: 0 auto; padding: 100px 20px 60px 20px; text-align: center; }
+        .hero { max-width: 900px; margin: 0 auto; padding: 120px 20px 80px 20px; text-align: center; }
         .badge {
             display: inline-flex; align-items: center; gap: 8px;
             background-color: #111827; border: 1px solid #1f2937;
@@ -74,6 +74,12 @@
         .contact-sec { max-width: 600px; margin: 0 auto; text-align: center; padding: 80px 20px; }
         .contact-links { display: flex; justify-content: center; gap: 16px; margin-top: 32px; flex-wrap: wrap; }
         .footer-text { margin-top: 80px; font-size: 11px; color: #4b5563 !important; font-weight: 500; }
+        .cta-btn {
+            background: linear-gradient(135deg, #38bdf8 0%, #a855f7 100%);
+            color: #030712 !important; font-weight: 700; padding: 12px 24px;
+            border-radius: 8px; border: none; cursor: pointer; transition: transform 0.3s; display: inline-block;
+        }
+        .cta-btn:hover { transform: translateY(-2px); opacity: 0.95; }
     </style>
 </head>
 <body>
@@ -91,81 +97,66 @@
         </nav>
     </header>
 
-    <!-- Hero Header -->
-    <section id="about" class="hero">
-        <div class="badge">
-            <span class="badge-dot"></span>
-            <span>Open to Internships & Freelance Contracts</span>
-        </div>
-        <h1>Building Software at the Speed of <span class="gradient-text">AI Innovation</span></h1>
-        <p>I am a BCA Graduate specializing in high-speed product assembly. Chaining advanced AI models, I plan, construct, and release end-to-end full-stack architectures and resilient web APIs 10x faster than traditional coding loops.</p>
-        <div style="display: flex; justify-content: center; gap: 16px;">
-            <a href="#projects" class="cta-btn" style="text-decoration: none; color: #030712 !important;">Explore Applications</a>
-            <a href="#contact" class="btn-secondary" style="padding: 12px 24px; border-radius: 8px; display: inline-block;">Connect Personally</a>
-        </div>
-    </section>
+    <!-- About Section Component -->
+    <div id="about">
+        <section class="hero">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                <span>Open to Internships & Freelance Contracts</span>
+            </div>
+            <h1>Building Software at the Speed of <span class="gradient-text">AI Innovation</span></h1>
+            <p>I am a BCA Graduate specializing in high-speed product assembly. Chaining advanced AI models, I plan, construct, and release end-to-end full-stack architectures and resilient web APIs 10x faster than traditional coding loops.</p>
+            <div style="display: flex; justify-content: center; gap: 16px;">
+                <a href="#projects" class="cta-btn" style="text-decoration: none; color: #030712 !important;">Explore Applications</a>
+                <a href="#contact" class="btn-secondary" style="padding: 12px 24px; border-radius: 8px; display: inline-block;">Connect Personally</a>
+            </div>
+        </section>
+    </div>
 
-    <!-- Main Projects Section -->
-    <section id="projects" style="max-width: 1100px; margin: 0 auto; padding: 60px 20px;">
-        <h2 class="section-title">Production Implementations</h2>
-        <p class="section-subtitle">Real-world operational systems designed and optimized through accelerated prompt-engineering lifecycles.</p>
-        
-        <div class="grid">
-            <!-- Card 1 -->
-            <div class="card">
-                <div>
-                    <div class="card-icon">🚨</div>
-                    <h3>Crime Reporting System</h3>
-                    <p>An AI-engineered reporting portal prioritizing encrypted submission flows, anonymous case handling, and automated emergency alert matrix classification algorithms.</p>
-                    <div class="tags">
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Express</span>
-                        <span class="tag">MongoDB</span>
+    <!-- Projects Section Component -->
+    <div id="projects">
+        <section style="max-width: 1100px; margin: 0 auto; padding: 80px 20px;">
+            <h2 class="section-title">Production Implementations</h2>
+            <p class="section-subtitle">Real-world operational systems designed and optimized through accelerated prompt-engineering lifecycles.</p>
+            
+            <div class="grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div>
+                        <div class="card-icon">🚨</div>
+                        <h3>Crime Reporting System</h3>
+                        <p>An AI-engineered reporting portal prioritizing encrypted submission flows, anonymous case handling, and automated emergency alert matrix classification algorithms.</p>
+                        <div class="tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="card-btns">
+                        <a href="https://github.com" class="btn-primary" target="_blank">Live Demo</a>
+                        <a href="https://github.com" class="btn-secondary" target="_blank">Source Code</a>
                     </div>
                 </div>
-                <div class="card-btns">
-                    <a href="#" class="btn-primary">Live Demo</a>
-                    <a href="#" class="btn-secondary">Source Code</a>
-                </div>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="card">
-                <div>
-                    <div class="card-icon">🎓</div>
-                    <h3>E-School Information</h3>
-                    <p>An institutional dashboard orchestrating student records databases, dynamic grade averages calculation pipelines, and teacher schedule grids.</p>
-                    <div class="tags">
-                        <span class="tag">React.js</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Relational SQL</span>
+                <!-- Card 2 -->
+                <div class="card">
+                    <div>
+                        <div class="card-icon">🎓</div>
+                        <h3>E-School Information</h3>
+                        <p>An institutional dashboard orchestrating student records databases, dynamic grade averages calculation pipelines, and teacher schedule grids.</p>
+                        <div class="tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Relational SQL</span>
+                        </div>
+                    </div>
+                    <div class="card-btns">
+                        <a href="https://github.com" class="btn-primary" target="_blank">Live Demo</a>
+                        <a href="https://github.com" class="btn-secondary" target="_blank">Source Code</a>
                     </div>
                 </div>
-                <div class="card-btns">
-                    <a href="#" class="btn-primary">Live Demo</a>
-                    <a href="#" class="btn-secondary">Source Code</a>
-                </div>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="card">
-                <div>
-                    <div class="card-icon">🐛</div>
-                    <h3>Defect Tracking System</h3>
-                    <p>An automated engineering board to monitor system crashes, managing item priority scaling, modification tracing logs, and secure REST webhook notifications.</p>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">PostgreSQL</span>
-                    </div>
-                </div>
-                <div class="card-btns">
-                    <a href="#" class="btn-primary">Live Demo</a>
-                    <a href="#" class="btn-secondary">Source Code</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Engineering Skills Section -->
-    <section id="skills" style="max-width: 1100px; margin: 0 auto; padding: 60px 20px;">
+                <!-- Card 3 -->
+                <div class="card">
+                    <div>
+                        <div class="card-icon">🐛</div>
