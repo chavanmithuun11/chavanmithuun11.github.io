@@ -18,7 +18,7 @@
             position: sticky; top: 0; z-index: 50;
             background-color: rgba(3, 7, 18, 0.8) !important;
             backdrop-filter: blur(12px);
-            border-b: 1px solid rgba(255,255,255,0.08);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
         nav {
             max-width: 1100px; margin: 0 auto; padding: 20px;
@@ -28,12 +28,6 @@
         .logo span { color: #38bdf8 !important; }
         .nav-links a { color: #9ca3af !important; text-decoration: none; margin-left: 24px; font-size: 14px; font-weight: 500; transition: color 0.3s; }
         .nav-links a:hover { color: #38bdf8 !important; }
-        .cta-btn {
-            background: linear-gradient(135deg, #38bdf8 0%, #a855f7 100%);
-            color: #030712 !important; font-weight: 700; padding: 10px 20px;
-            border-radius: 8px; border: none; cursor: pointer; transition: transform 0.3s;
-        }
-        .cta-btn:hover { transform: translateY(-2px); opacity: 0.95; }
         .hero { max-width: 900px; margin: 0 auto; padding: 100px 20px 60px 20px; text-align: center; }
         .badge {
             display: inline-flex; align-items: center; gap: 8px;
@@ -41,8 +35,8 @@
             padding: 6px 14px; border-radius: 9999px; font-size: 12px;
             color: #38bdf8 !important; font-weight: 600; margin-bottom: 24px;
         }
-        .badge-dot { width: 8px; h-8px: 8px; background-color: #10b981; border-radius: 50%; display: inline-block; }
-        .hero h1 { font-size: 54px; font-weight: 900; tracking-tight: -1px; margin-bottom: 24px; line-height: 1.1; }
+        .badge-dot { width: 8px; height: 8px; background-color: #10b981; border-radius: 50%; display: inline-block; }
+        .hero h1 { font-size: 54px; font-weight: 900; margin-bottom: 24px; line-height: 1.1; }
         .gradient-text {
             background: linear-gradient(to right, #38bdf8, #a855f7);
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
@@ -112,7 +106,7 @@
     </section>
 
     <!-- Main Projects Section -->
-    <section id="projects" style="max-w: 1100px; margin: 0 auto; padding: 60px 20px;">
+    <section id="projects" style="max-width: 1100px; margin: 0 auto; padding: 60px 20px;">
         <h2 class="section-title">Production Implementations</h2>
         <p class="section-subtitle">Real-world operational systems designed and optimized through accelerated prompt-engineering lifecycles.</p>
         
@@ -165,3 +159,13 @@
                         <span class="tag">PostgreSQL</span>
                     </div>
                 </div>
+                <div class="card-btns">
+                    <a href="#" class="btn-primary">Live Demo</a>
+                    <a href="#" class="btn-secondary">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering Skills Section -->
+    <section id="skills" style="max-width: 1100px; margin: 0 auto; padding: 60px 20px;">
