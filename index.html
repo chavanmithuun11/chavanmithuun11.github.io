@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chavan Mithuun | AI-Driven Developer Portfolio</title>
+    <!-- Tailwind CSS for Modern Styling -->
+    <script src="https://tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b',
+                        accentBlue: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-slate-200 font-sans antialiased selection:bg-accentBlue selection:text-darkBg">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-darkBg/80 border-b border-slate-800">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tight text-white">
+                Mithuun<span class="text-accentBlue">.dev</span>
+            </div>
+            <div class="flex items-center space-x-6 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#skills" class="hover:text-white transition">Skills</a>
+                <a href="#contact" class="px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition border border-slate-700">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="max-w-4xl mx-auto px-6 pt-24 pb-16 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-none mb-6">
+            AI-Driven Software Developer
+        </h1>
+        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+            BCA Graduate specializing in rapid application development. I leverage advanced AI pipelines to design, architect, and deploy full-stack web platforms and robust REST APIs at 10x traditional speed.
+        </p>
+        <div class="flex justify-center space-x-4">
+            <a href="#projects" class="px-6 py-3 bg-accentBlue text-darkBg font-semibold rounded-lg hover:bg-sky-400 transition shadow-lg shadow-sky-500/10">
+                View My Projects
+            </a>
+            <a href="#contact" class="px-6 py-3 bg-slate-800 text-slate-200 font-semibold rounded-lg hover:bg-slate-700 transition border border-slate-700">
+                Let's Talk
+            </a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-16 scroll-mt-16">
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-white mb-2">Featured Projects</h2>
+            <p class="text-slate-400">Functional systems built through rapid AI prototyping and clean architecture.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-cardBg rounded-xl border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-slate-700 transition p-6">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-3">Crime Reporting System</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        An AI-accelerated full-stack platform engineered for secure public incident logging, anonymous reporting, and automated emergency classification.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2.5 py-1 text-xs font-medium bg-slate-900 text-accentBlue rounded">Node.js</span>
+                        <span class="px-2.5 py-1 text-xs font-medium bg-slate-900 text-accentBlue rounded">Express</span>
+                        <span class="px-2.5 py-1 text-xs font-medium bg-slate-900 text-accentBlue rounded">MongoDB</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <a href="#" class="text-center px-3 py-2 bg-slate-900 text-sm font-medium rounded hover:bg-slate-950 transition border border-slate-800">Live Demo</a>
+                    <a href="#" class="text-center px-3 py-2 bg-slate-800 text-sm font-medium rounded hover:bg-slate-700 transition border border-slate-700">View Code</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-cardBg rounded-xl border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-slate-700 transition p-6">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-3">E-School Information</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        A high-throughput administrative portal handling student enrollments, grading matrices, and complex teacher scheduling.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2.5 py-1 text-xs font-medium bg-slate-900 text-accentBlue rounded">React.js</span>
+                        <span class="px-2.5 py-1 text-xs font-medium bg-slate-900 text-accentBlue rounded">Node.js</span>
+                        <span class="px-2.5 py-1 text-xs font-medium bg-slate-900 text-accentBlue rounded">SQL Database</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <a href="#" class="text-center px-3 py-2 bg-slate-900 text-sm font-medium rounded hover:bg-slate-950 transition border border-slate-800">Live Demo</a>
+                    <a href="#" class="text-center px-3 py-2 bg-slate-800 text-sm font-medium rounded hover:bg-slate-700 transition border border-slate-700">View Code</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-cardBg rounded-xl border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-slate-700 transition p-6">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-3">Defect Tracking System</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        A core engineering tool for software bug logging, assignment, and priority lifecycle management with clean API handling.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2.5 py-1 text-xs font-medium bg-slate-900 text-accentBlue rounded">Python</span>
+                        <span class="px-2.5 py-1 text-xs font-medium bg-slate-900 text-accentBlue rounded">FastAPI</span>
+                        <span class="px-2.5 py-1 text-xs font-medium bg-slate-900 text-accentBlue rounded">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <a href="#" class="text-center px-3 py-2 bg-slate-900 text-sm font-medium rounded hover:bg-slate-950 transition border border-slate-800">Live Demo</a>
+                    <a href="#" class="text-center px-3 py-2 bg-slate-800 text-sm font-medium rounded hover:bg-slate-700 transition border border-slate-700">View Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900 scroll-mt-16">
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-white mb-2">Technical Toolkit</h2>
+            <p class="text-slate-400">Languages, frameworks, and modern workflows I use daily.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-8">
+            <div class="p-6 bg-slate-900/50 rounded-xl border border-slate-800/60">
+                <h3 class="text-accentBlue font-semibold mb-4">Core Development</h3>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li>• JavaScript (ES6+)</li>
+                    <li>• Python</li>
+                    <li>• Node.js & Express</li>
+                    <li>• FastAPI Framework</li>
+                </ul>
+            </div>
+            <div class="p-6 bg-slate-900/50 rounded-xl border border-slate-800/60">
+                <h3 class="text-accentBlue font-semibold mb-4">Databases & APIs</h3>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li>• MongoDB (NoSQL)</li>
+                    <li>• Relational SQL</li>
+                    <li>• RESTful API Architecture</li>
+                    <li>• Postman API Testing</li>
+                </ul>
+            </div>
+            <div class="p-6 bg-slate-900/50 rounded-xl border border-slate-800/60">
+                <h3 class="text-accentBlue font-semibold mb-4">Modern Workflows</h3>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li>• Prompt Engineering</li>
+                    <li>• AI-Assisted Code Generation</li>
+                    <li>• Rapid MVP Prototyping</li>
+                    <li>• Git & GitHub Version Control</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section / Footer -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Get In Touch</h2>
+        <p class="text-slate-400 max-w-md mx-auto mb-8 text-sm">
+            Looking for a high-speed developer intern or want to hire me for a freelance contract project? Reach out anytime!
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 text-sm font-medium">
