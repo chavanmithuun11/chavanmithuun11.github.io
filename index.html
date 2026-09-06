@@ -3,23 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chavan Mithuun | AI-Driven Full-Stack Developer</title>
+  <title>Mithun Chavan | AI-Driven Systems & API Architect</title>
+  <!-- FontAwesome for Pro Developer Social Icons -->
+  <link rel="stylesheet" href="https://cloudflare.com">
   <style>
-    /* Portfolio Core Theme Styles */
+    /* Premium Production Variables & Resets */
+    :root {
+      --bg-main: #030712;
+      --bg-surface: #0b0f19;
+      --border-color: #1f2937;
+      --text-primary: #f3f4f6;
+      --text-muted: #9ca3af;
+      --accent-blue: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.15);
+    }
+    
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+    
     body {
-      background-color: #030712;
-      color: #f3f4f6;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      overflow-x: hidden;
     }
+
+    /* Fixed Navigation Header Layout */
     header {
-      background-color: #0b0f19;
-      border-bottom: 1px solid #1f2937;
+      background-color: rgba(11, 15, 25, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
       padding: 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
     }
     .nav-container {
       max-width: 1100px;
@@ -33,71 +54,256 @@
       font-weight: 800;
       letter-spacing: 1px;
     }
-    .logo span { color: #3b82f6; }
+    .logo span { color: var(--accent-blue); }
+    nav {
+      display: flex;
+      align-items: center;
+    }
     nav a {
-      color: #9ca3af;
+      color: var(--text-muted);
       text-decoration: none;
-      margin-left: 24px;
+      margin-left: 28px;
       font-size: 14px;
+      font-weight: 500;
       transition: color 0.2s;
     }
     nav a:hover, nav a.active { color: #ffffff; }
     .hire-btn {
       background-color: #ffffff;
-      color: #030712;
-      padding: 8px 16px;
+      color: var(--bg-main);
+      padding: 8px 18px;
       border-radius: 6px;
       font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.2s;
     }
+    .hire-btn:hover { opacity: 0.9; }
 
-    /* Production Implementations Grid Section */
-    .section-title {
-      font-size: 32px;
+    /* High-Authority Hero Introduction Block */
+    .hero-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 160px 20px 100px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+    }
+    .hero-content {
+      flex: 1.2;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #1e293b;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #60a5fa;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+    }
+    .badge i { font-size: 10px; color: #10b981; }
+    .hero-name {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, #ffffff 40%, #9ca3af 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-title {
+      font-size: 26px;
+      color: var(--accent-blue);
       font-weight: 700;
-      text-align: center;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    .hero-description {
+      color: var(--text-muted);
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 32px;
+      max-width: 580px;
+    }
+    
+    /* Technology Tag Array Layout */
+    .tech-stack-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #6b7280;
+      font-weight: 700;
       margin-bottom: 12px;
     }
-    .section-subtitle {
-      color: #9ca3af;
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 48px auto;
-      font-size: 16px;
-      line-height: 1.5;
+    .tech-tray {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 36px;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 24px;
+    .tech-pill {
+      background-color: #111827;
+      border: 1px solid var(--border-color);
+      color: #d1d5db;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-family: monospace;
+      font-weight: 500;
+    }
+
+    /* Professional Social Media Navigation Matrix */
+    .social-links {
+      display: flex;
+      gap: 16px;
+    }
+    .social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 18px;
+      text-decoration: none;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .social-icon:hover {
+      color: #ffffff;
+      border-color: var(--accent-blue);
+      background-color: #111827;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px var(--accent-glow);
+    }
+
+    /* Media/Aesthetic Frame Wrapper */
+    .hero-media-wrapper {
+      flex: 0.8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .avatar-frame {
+      position: relative;
+      width: 340px;
+      height: 340px;
+    }
+    .avatar-frame::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      border-radius: 32px;
+      background: linear-gradient(135deg, var(--accent-blue), #1e3a8a, transparent);
+      z-index: 1;
+      opacity: 0.4;
+    }
+    .hero-image {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 24px;
+      object-fit: cover;
+      border: 2px solid var(--border-color);
+      background-color: var(--bg-surface);
+      z-index: 2;
+    }
+
+    /* Responsive Presentation Viewports */
+    @media (max-width: 900px) {
+      .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 120px 24px 60px 24px;
+        gap: 40px;
+      }
+      .hero-description { margin: 0 auto 32px auto; }
+      .tech-tray { justify-content: center; }
+      .social-links { justify-content: center; }
+      .avatar-frame {
+        width: 260px;
+        height: 260px;
+      }
+      .avatar-frame::before { border-radius: 24px; }
+      .hero-image { border-radius: 18px; }
+      .hero-name { font-size: 42px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation Bar Components -->
+  <!-- Navigation Bar Structural Component -->
   <header>
     <div class="nav-container">
       <div class="logo">MITHUUN<span>.DEV</span></div>
       <nav>
-        <a href="#about">About</a>
-        <a href="#projects" class="active">Projects</a>
+        <a href="#about" class="active">About</a>
         <a href="#skills">Skills</a>
         <a href="#hire" class="hire-btn">Hire Me</a>
       </nav>
     </div>
   </header>
 
-  <!-- Production Implementations Component Container -->
-  <div id="projects">
-    <section style="max-width: 1100px; margin: 0 auto; padding: 80px 20px;">
-      <h2 class="section-title">Production Implementations</h2>
-      <p class="section-subtitle">Real-world operational systems designed and optimized through accelerated prompt-engineering lifecycles.</p>
+  <!-- Interactive Hero Component Header -->
+  <main>
+    <section id="about" class="hero-container">
+      <div class="hero-content">
+        <div class="badge">
+          <i class="fa-solid fa-circle"></i> Available for contracts
+        </div>
+        <h1 class="hero-name">Mithun Chavan</h1>
+        <h2 class="hero-title">AI-Based Web API Developer</h2>
+        <p class="hero-description">
+          Architecting robust server-side execution matrices, highly optimized routing layers, and secure multi-model API endpoints. Specializing in bridging heavy database pipelines with seamless, intelligent developer services.
+        </p>
+        
+        <div class="tech-stack-label">Core Specializations</div>
+        <div class="tech-tray">
+          <div class="tech-pill">Node.js</div>
+          <div class="tech-pill">Express</div>
+          <div class="tech-pill">RESTful APIs</div>
+          <div class="tech-pill">PostgreSQL</div>
+          <div class="tech-pill">LLM Integration</div>
+          <div class="tech-pill">Docker</div>
+        </div>
 
-      <div class="grid">
-        <!-- Project cards are completely removed. New cards can be added right here later! -->
+        <div class="social-links">
+          <!-- 🛠️ Replace '#' with your actual platform links inside href -->
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" title="Developer Twitter/X">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="mailto:your-email@example.com" class="social-icon" title="Email Developer">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
       </div>
+      
+           <div class="hero-media-wrapper">
+        <div class="avatar-frame">
+          <img src="https://prodia.xyz" alt="Mithun Chavan Portfolio Avatar" class="hero-image">
+        </div>
+      </div>
+
     </section>
-  </div>
+  </main>
 
 </body>
 </html>
