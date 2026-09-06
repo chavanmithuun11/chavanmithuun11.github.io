@@ -305,6 +305,68 @@
 
 
     </section>
+      <!-- Interactive Client Services Slides Container -->
+  <section id="services" style="max-width: 1100px; margin: 80px auto; padding: 0 20px;">
+    <h2 style="font-size: 32px; font-weight: 700; text-align: center; margin-bottom: 8px; color: #ffffff;">How I Help Your Business</h2>
+    <p style="color: var(--text-muted); text-align: center; margin-bottom: 40px; font-size: 16px;">Click through the slides below to see how we can engineer your next robust API layer.</p>
+    
+    <div class="slides-window" style="position: relative; background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 16px; padding: 40px; min-height: 280px; display: flex; align-items: center; justify-content: center;">
+      
+      <!-- Slide 1: Architecture Design -->
+      <div class="service-slide active-slide" id="slide-1" style="width: 100%;">
+        <div style="display: flex; gap: 24px; align-items: flex-start; text-align: left;">
+          <div style="background: rgba(59, 130, 246, 0.1); color: var(--accent-blue); padding: 16px; border-radius: 12px; font-size: 24px; flex-shrink: 0;"><i class="fa-solid fa-sitemap"></i></div>
+          <div>
+            <h3 style="font-size: 22px; margin-bottom: 12px; color: #ffffff;">1. Custom Web API Architecture Design</h3>
+            <p style="color: var(--text-muted); line-height: 1.6; font-size: 15px;">I design and build tailored RESTful backends from scratch using Node.js and Express. I help clients map out complex database schemas, optimize endpoint response times, and establish clean, modular controller code structured to scale endlessly as user traffic grows.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: AI Framework Integration -->
+      <div class="service-slide" id="slide-2" style="display: none; width: 100%;">
+        <div style="display: flex; gap: 24px; align-items: flex-start; text-align: left;">
+          <div style="background: rgba(16, 185, 129, 0.1); color: #10b981; padding: 16px; border-radius: 12px; font-size: 24px; flex-shrink: 0;"><i class="fa-solid fa-brain"></i></div>
+          <div>
+            <h3 style="font-size: 22px; margin-bottom: 12px; color: #ffffff;">2. Seamless AI & LLM Integrations</h3>
+            <p style="color: var(--text-muted); line-height: 1.6; font-size: 15px;">I bridge the gap between heavy software layers and cutting-edge artificial intelligence. I write custom gateway middleware pipelines that securely connect your web products to OpenAI, Anthropic, or local open-source LLM model weights, implementing robust streaming wrappers and query caching systems.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Database & Security Optimization -->
+      <div class="service-slide" id="slide-3" style="display: none; width: 100%;">
+        <div style="display: flex; gap: 24px; align-items: flex-start; text-align: left;">
+          <div style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 16px; border-radius: 12px; font-size: 24px; flex-shrink: 0;"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <h3 style="font-size: 22px; margin-bottom: 12px; color: #ffffff;">3. Database Tuning & Secure Authentication</h3>
+            <p style="color: var(--text-muted); line-height: 1.6; font-size: 15px;">Data integrity and user safety are critical. I craft bulletproof token management pipelines (JWT), structure secure password hashing matrix layers, and write optimized SQL queries (PostgreSQL/MySQL) featuring structural indexing to guarantee your client records stay completely confidential and highly available.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide Controls Buttons -->
+      <div style="position: absolute; bottom: 20px; right: 40px; display: flex; gap: 12px;">
+        <button onclick="changeSlide(-1)" style="background: #111827; border: 1px solid var(--border-color); color: white; padding: 8px 16px; border-radius: 6px; cursor: pointer; transition: 0.2s;"><i class="fa-solid fa-arrow-left"></i></button>
+        <button onclick="changeSlide(1)" style="background: #111827; border: 1px solid var(--border-color); color: white; padding: 8px 16px; border-radius: 6px; cursor: pointer; transition: 0.2s;"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightweight Carousel Script Engine -->
+  <script>
+    let currentSlideIndex = 1;
+    const totalSlides = 3;
+
+    function changeSlide(direction) {
+      document.getElementById(`slide-${currentSlideIndex}`).style.display = 'none';
+      currentSlideIndex += direction;
+      if (currentSlideIndex > totalSlides) currentSlideIndex = 1;
+      if (currentSlideIndex < 1) currentSlideIndex = totalSlides;
+      document.getElementById(`slide-${currentSlideIndex}`).style.display = 'block';
+    }
+  </script>
+
   </main>
 
 </body>
